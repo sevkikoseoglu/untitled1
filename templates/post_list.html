@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+ 
+{% block content %}
+    <h1>Articles:</h1>
+        {% for publisher in object_list %}
+            <h2>{{ publisher.title }}</h2>
+            <p>{{ publisher.description }}</p>
+        {% endfor %}
+{% endblock %}
